@@ -6,7 +6,7 @@ using System.Text;
 
 namespace RegistroCotizacionCompleto.Entidades
 {
-    public class Articulo
+    public class Articulos
     {
         [Key]
         public int ArticuloId { get; set; }
@@ -16,7 +16,7 @@ namespace RegistroCotizacionCompleto.Entidades
         public int Existencia { get; set; }
         public int CantCotizada { get; set; }
 
-        public Articulo()
+        public Articulos()
         {
             ArticuloId = 0;
             FechaVencimiento = DateTime.Now;
