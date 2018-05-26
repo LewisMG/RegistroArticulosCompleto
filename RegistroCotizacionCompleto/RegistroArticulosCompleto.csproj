@@ -61,17 +61,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Consultas\Consultar Productos.cs">
+    <Compile Include="UI\Consultas\Consultar Articulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Consultas\Consultar Productos.Designer.cs">
-      <DependentUpon>Consultar Productos.cs</DependentUpon>
+    <Compile Include="UI\Consultas\Consultar Articulos.Designer.cs">
+      <DependentUpon>Consultar Articulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Registros\Registrar Producto.cs">
+    <Compile Include="UI\Registros\Registrar Articulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Registros\Registrar Producto.Designer.cs">
-      <DependentUpon>Registrar Producto.cs</DependentUpon>
+    <Compile Include="UI\Registros\Registrar Articulos.Designer.cs">
+      <DependentUpon>Registrar Articulos.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -86,11 +86,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\Consultas\Consultar Productos.resx">
-      <DependentUpon>Consultar Productos.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Consultas\Consultar Articulos.resx">
+      <DependentUpon>Consultar Articulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\Registrar Producto.resx">
-      <DependentUpon>Registrar Producto.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Registros\Registrar Articulos.resx">
+      <DependentUpon>Registrar Articulos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\Script.sql" />
+    <None Include="Resources\icons8_Search_16.png" />
     <None Include="Resources\icons8_Search_Property_32.png" />
     <None Include="Resources\icons8_Delete_Document_32.png" />
     <None Include="Resources\icons8_Save_Close_32.png" />

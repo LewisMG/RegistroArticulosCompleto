@@ -10,5 +10,5 @@ CREATE TABLE Articulos
 	Precio money,
 	Existencia int,
 	CantCotizada int,
-)
+);
 

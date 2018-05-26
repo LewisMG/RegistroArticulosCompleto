@@ -33,6 +33,7 @@
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarCotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarArticulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,9 +65,11 @@
             // 
             // consultasToolStripMenuItem
             // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultarArticulosToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.consultasToolStripMenuItem.Text = "Consultas ";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // agregarCotizacionToolStripMenuItem
             // 
@@ -74,6 +77,13 @@
             this.agregarCotizacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarCotizacionToolStripMenuItem.Text = "Agregar Cotizacion";
             this.agregarCotizacionToolStripMenuItem.Click += new System.EventHandler(this.agregarCotizacionToolStripMenuItem_Click);
+            // 
+            // consultarArticulosToolStripMenuItem
+            // 
+            this.consultarArticulosToolStripMenuItem.Name = "consultarArticulosToolStripMenuItem";
+            this.consultarArticulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarArticulosToolStripMenuItem.Text = "Consultar Articulos";
+            this.consultarArticulosToolStripMenuItem.Click += new System.EventHandler(this.consultarArticulosToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -99,6 +109,7 @@
         private System.Windows.Forms.ToolStripMenuItem registrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarCotizacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarArticulosToolStripMenuItem;
     }
 }
 

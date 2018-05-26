@@ -93,6 +93,16 @@ namespace RegistroCotizacionCompleto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Search_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Search_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Search_Property_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_Search_Property_32", resourceCulture);
