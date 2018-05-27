@@ -40,27 +40,17 @@
             this.Existencia_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.FechaVenc_dateTime = new System.Windows.Forms.DateTimePicker();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.btn_Eliminar = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.btn_Nuevo = new System.Windows.Forms.Button();
-            this.m = new System.Windows.Forms.ErrorProvider(this.components);
             this.PrecionumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.General_errorprovider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ArticuloID_numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantCotizada_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Existencia_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.General_errorprovider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -153,31 +143,11 @@
             this.FechaVenc_dateTime.Size = new System.Drawing.Size(200, 20);
             this.FechaVenc_dateTime.TabIndex = 6;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // errorProvider3
-            // 
-            this.errorProvider3.ContainerControl = this;
-            // 
-            // errorProvider4
-            // 
-            this.errorProvider4.ContainerControl = this;
-            // 
-            // errorProvider5
-            // 
-            this.errorProvider5.ContainerControl = this;
-            // 
-            // errorProvider2
-            // 
-            this.errorProvider2.ContainerControl = this;
-            // 
             // btn_Buscar
             // 
             this.btn_Buscar.Image = global::RegistroCotizacionCompleto.Properties.Resources.icons8_Search_16;
             this.btn_Buscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Buscar.Location = new System.Drawing.Point(235, 30);
+            this.btn_Buscar.Location = new System.Drawing.Point(252, 30);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_Buscar.TabIndex = 10;
@@ -229,16 +199,16 @@
             this.btn_Nuevo.UseVisualStyleBackColor = true;
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
             // 
-            // m
-            // 
-            this.m.ContainerControl = this;
-            // 
             // PrecionumericUpDown
             // 
             this.PrecionumericUpDown.Location = new System.Drawing.Point(132, 170);
             this.PrecionumericUpDown.Name = "PrecionumericUpDown";
             this.PrecionumericUpDown.Size = new System.Drawing.Size(86, 20);
             this.PrecionumericUpDown.TabIndex = 11;
+            // 
+            // General_errorprovider
+            // 
+            this.General_errorprovider.ContainerControl = this;
             // 
             // RegistroCotizacion
             // 
@@ -268,13 +238,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ArticuloID_numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantCotizada_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Existencia_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.General_errorprovider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,13 +261,8 @@
         private System.Windows.Forms.Button btn_Nuevo;
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Button btn_Eliminar;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ErrorProvider errorProvider3;
-        private System.Windows.Forms.ErrorProvider errorProvider4;
-        private System.Windows.Forms.ErrorProvider errorProvider5;
-        private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Button btn_Buscar;
-        private System.Windows.Forms.ErrorProvider m;
         private System.Windows.Forms.NumericUpDown PrecionumericUpDown;
+        private System.Windows.Forms.ErrorProvider General_errorprovider;
     }
 }

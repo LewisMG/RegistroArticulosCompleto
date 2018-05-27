@@ -36,27 +36,27 @@ namespace RegistroCotizacionCompleto.UI.Registros
             bool paso = false;
             if (Negar == 1 && ArticuloID_numericUpDown1.Value == 0)
             {
-                errorProvider1.SetError(ArticuloID_numericUpDown1, "Ingrese un ID");
+                General_errorprovider.SetError(ArticuloID_numericUpDown1, "Ingrese un ID");
                 paso = true;
             }
             if (Negar == 2 && Descripcion_textBox.Text == String.Empty)
             {
-                errorProvider2.SetError(Descripcion_textBox, "Ingrese una Descripcion");
+                General_errorprovider.SetError(Descripcion_textBox, "Ingrese una Descripcion");
                 paso = true;
             }
             if (Negar == 2 && PrecionumericUpDown.Value == 0)
             {
-                errorProvider3.SetError(PrecionumericUpDown, "Ingrese el Precio");
+                General_errorprovider.SetError(PrecionumericUpDown, "Ingrese el Precio");
                 paso = true;
             }
             if (Negar == 2 && Existencia_numericUpDown.Value == 0)
             {
-                errorProvider4.SetError(Existencia_numericUpDown, "Ingrese Cantidad en Existencia");
+                General_errorprovider.SetError(Existencia_numericUpDown, "Ingrese Cantidad en Existencia");
                 paso = true;
             }
             if (Negar == 2 && CantCotizada_numericUpDown.Value == 0)
             {
-                errorProvider5.SetError(CantCotizada_numericUpDown, "Ingrese Cantidad Cotizada");
+                General_errorprovider.SetError(CantCotizada_numericUpDown, "Ingrese Cantidad Cotizada");
                 paso = true;
             }
             return paso;
@@ -72,31 +72,21 @@ namespace RegistroCotizacionCompleto.UI.Registros
             CantCotizada_numericUpDown.Value = 0;
         }
 
-        private void LimpiarErrores()
-        {
-            errorProvider1.Clear();
-            errorProvider2.Clear();
-            errorProvider3.Clear();
-            errorProvider4.Clear();
-            errorProvider5.Clear();
-        }
-
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
-            LimpiarErrores();
+            General_errorprovider.Clear();
             LimpiarCampos();
         }
 
         private void btn_Guardar_Click(object sender, EventArgs e)
-        {
-            LimpiarErrores();
+        {            
             if (Negar(2))
             {
                 MessageBox.Show("LLenar los campos marcados");
                 return;
             }
-           
 
+            General_errorprovider.Clear();
 
 
             if (ArticuloID_numericUpDown1.Value == 0)
@@ -129,7 +119,7 @@ namespace RegistroCotizacionCompleto.UI.Registros
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            LimpiarErrores();
+            General_errorprovider.Clear();
 
             if (Negar(1))
             {
@@ -152,7 +142,7 @@ namespace RegistroCotizacionCompleto.UI.Registros
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
-            LimpiarErrores();
+            General_errorprovider.Clear();
             if (Negar(1))
             {
                 MessageBox.Show("Ingrese un ID");

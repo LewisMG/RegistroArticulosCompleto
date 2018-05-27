@@ -51,22 +51,27 @@ namespace RegistroCotizacionCompleto.UI.Consultas
             {
                 case 0://ID Articulo
                     id = Convert.ToInt32(Criterio_textBox.Text);
-                    filtro = x => x.ArticuloId == id;
+                    filtro = x => x.ArticuloId == id
+                    && (x.FechaVencimiento >= Desde_dateTimePicker.Value && x.FechaVencimiento <= Hasta_dateTimePicker.Value);
                     break;
                 case 1://Descripcion
-                    filtro = x => x.Descripcion.Equals(Criterio_textBox.Text);
+                    filtro = x => x.Descripcion.Equals(Criterio_textBox.Text)
+                    && (x.FechaVencimiento >= Desde_dateTimePicker.Value && x.FechaVencimiento <= Hasta_dateTimePicker.Value);
                     break;
                 case 2://Precio
                     precio = Convert.ToDecimal(Criterio_textBox.Text);
-                    filtro = x => x.Precio == precio;
+                    filtro = x => x.Precio == precio
+                    && (x.FechaVencimiento >= Desde_dateTimePicker.Value && x.FechaVencimiento <= Hasta_dateTimePicker.Value);
                     break;
                 case 3://Existencia
                     ex = Convert.ToInt32(Criterio_textBox.Text);
-                    filtro = x => x.Existencia == ex;
+                    filtro = x => x.Existencia == ex
+                    && (x.FechaVencimiento >= Desde_dateTimePicker.Value && x.FechaVencimiento <= Hasta_dateTimePicker.Value);
                     break;
                 case 4://Cantidad Cotizada
                     cc = Convert.ToInt32(Criterio_textBox.Text);
-                    filtro = x => x.CantCotizada == cc;
+                    filtro = x => x.CantCotizada == cc
+                    && (x.FechaVencimiento >= Desde_dateTimePicker.Value && x.FechaVencimiento <= Hasta_dateTimePicker.Value);
                     break;
             }
 
